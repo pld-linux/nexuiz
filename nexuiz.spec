@@ -1,3 +1,4 @@
+%define	_ver	%(echo %{version} | tr -d .)
 Summary:	nexuiz - engine for first-person shoter game
 Summary(pl):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
@@ -5,9 +6,8 @@ Version:	2.2.3
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://dl.sourceforge.net/nexuiz/%{name}-223.zip
+Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
 # Source0-md5:	953fda1555fc1f9ca040bdbb797eb0fd
-Patch0:		%{name}-datadir.patch
 URL:		http://nexuiz.com/
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
@@ -37,12 +37,15 @@ osoby na pojedynczym serwerze.
 %setup -q -n Nexuiz
 cd sources
 %{__unzip} -o -qq enginesource20070123.zip
-sed -i s/-Wdeclaration-after-statement/#-Wdeclaration-after-statement/ darkplaces/makefile.inc
-%patch0 -p0
+sed -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
 
 %build
 cd sources/darkplaces
-%{__make}  nexuiz
+%{__make} nexuiz \
+	CC="%{__cc}" \
+	OPTIM_RELEASE="%{rpmcflags}" \
+	LDFLAGS_RELEASE="%{rpmcflags} %{rpmldflags}" \
+	DP_FS_BASEDIR="%{_datadir}/games/%{name}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
