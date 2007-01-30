@@ -13,7 +13,7 @@ BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	sed
 BuildRequires:	unzip
-Requires:	nexuiz-data
+Requires:	nexuiz-data = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
