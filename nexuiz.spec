@@ -28,7 +28,7 @@ supports up to 64 players on a single server.
 %description -l pl
 Nexuiz jest chaotyczn± strzelanin± w pierwszej osobie, skupion± na
 standardowym i klasycznym deathmatch'u. Nexuiz jest bardzo przyjazny
-dla moderów. Jeste oparty na silniku Darkplaces, czyli mocno
+dla moderów. Jest oparty na silniku Darkplaces, czyli mocno
 zmodyfikowan± wersj± oryginalnego silnika Quake. Darkplaces ma
 totalnie przepisany kod obs³ugi sieci, dziêki któremu mog± walczyæ 64
 osoby na pojedynczym serwerze.
