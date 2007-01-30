@@ -5,7 +5,7 @@ Name:		nexuiz
 Version:	2.2.3
 Release:	1
 License:	GPL
-Group:		Applications/Games
+Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
 # Source0-md5:	953fda1555fc1f9ca040bdbb797eb0fd
 URL:		http://nexuiz.com/
@@ -27,7 +27,7 @@ supports up to 64 players on a single server.
 
 %description -l pl
 Nexuiz jest chaotyczn± strzelanin± w pierwszej osobie, skupion± na
-standardowym i klasycznym deathmatch'u. Nexuiz jest bardzo przyjezny
+standardowym i klasycznym deathmatch'u. Nexuiz jest bardzo przyjazny
 dla moderów. Jeste oparty na silniku Darkplaces, czyli mocno
 zmodyfikowan± wersj± oryginalnego silnika Quake. Darkplaces ma
 totalnie przepisany kod obs³ugi sieci, dziêki któremu mog± walczyæ 64
