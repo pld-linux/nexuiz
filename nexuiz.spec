@@ -4,7 +4,7 @@ Summary(pl):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.2.3
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
 # Source0-md5:	953fda1555fc1f9ca040bdbb797eb0fd
