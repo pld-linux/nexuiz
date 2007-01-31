@@ -11,7 +11,7 @@ Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
 URL:		http://nexuiz.com/
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
-BuildRequires:	sed
+BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
 Requires:	nexuiz-data = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
