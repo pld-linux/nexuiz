@@ -1,6 +1,6 @@
 %define	_ver	%(echo %{version} | tr -d .)
 Summary:	nexuiz - engine for first-person shoter game
-Summary(pl.UTF-8):   nexuiz - silnik do strzelaniny w pierwszej osobie
+Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.2.3
 Release:	1
