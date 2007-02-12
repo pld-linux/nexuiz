@@ -1,6 +1,6 @@
 %define	_ver	%(echo %{version} | tr -d .)
 Summary:	nexuiz - engine for first-person shoter game
-Summary(pl):	nexuiz - silnik do strzelaniny w pierwszej osobie
+Summary(pl.UTF-8):   nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.2.3
 Release:	1
@@ -25,12 +25,12 @@ Quake. Darkplaces features realtime lighting and stencil shadows,
 bumpmapping, gloss, bloom, and totally rewritten network code that
 supports up to 64 players on a single server.
 
-%description -l pl
-Nexuiz jest chaotyczn± strzelanin± w pierwszej osobie, skupion± na
+%description -l pl.UTF-8
+Nexuiz jest chaotycznÄ… strzelaninÄ… w pierwszej osobie, skupionÄ… na
 standardowym i klasycznym deathmatch'u. Nexuiz jest bardzo przyjazny
-dla moderów. Jest oparty na silniku Darkplaces, czyli mocno
-zmodyfikowan± wersj± oryginalnego silnika Quake. Darkplaces ma
-totalnie przepisany kod obs³ugi sieci, dziêki któremu mog± walczyæ 64
+dla moderÃ³w. Jest oparty na silniku Darkplaces, czyli mocno
+zmodyfikowanÄ… wersjÄ… oryginalnego silnika Quake. Darkplaces ma
+totalnie przepisany kod obsÅ‚ugi sieci, dziÄ™ki ktÃ³remu mogÄ… walczyÄ‡ 64
 osoby na pojedynczym serwerze.
 
 %prep
