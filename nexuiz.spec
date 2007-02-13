@@ -27,11 +27,11 @@ supports up to 64 players on a single server.
 
 %description -l pl.UTF-8
 Nexuiz jest chaotyczną strzelaniną w pierwszej osobie, skupioną na
-standardowym i klasycznym deathmatch'u. Nexuiz jest bardzo przyjazny
+standardowym i klasycznym deathmatchu. Nexuiz jest bardzo przyjazny
 dla moderów. Jest oparty na silniku Darkplaces, czyli mocno
-zmodyfikowaną wersją oryginalnego silnika Quake. Darkplaces ma
-totalnie przepisany kod obsługi sieci, dzięki któremu mogą walczyć 64
-osoby na pojedynczym serwerze.
+zmodyfikowanej wersji oryginalnego silnika Quake. Darkplaces ma
+całkowicie przepisany kod obsługi sieci, dzięki któremu mogą walczyć
+64 osoby na pojedynczym serwerze.
 
 %prep
 %setup -q -n Nexuiz
@@ -40,8 +40,7 @@ cd sources
 sed -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
 
 %build
-cd sources/darkplaces
-%{__make} nexuiz \
+%{__make} -C sources/darkplaces nexuiz \
 	CC="%{__cc}" \
 	OPTIM_RELEASE="%{rpmcflags}" \
 	LDFLAGS_RELEASE="%{rpmcflags} %{rpmldflags}" \
@@ -51,6 +50,7 @@ cd sources/darkplaces
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install sources/darkplaces/nexuiz-* $RPM_BUILD_ROOT%{_bindir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
