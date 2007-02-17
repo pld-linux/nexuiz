@@ -37,7 +37,7 @@ całkowicie przepisany kod obsługi sieci, dzięki któremu mogą walczyć
 %setup -q -n Nexuiz
 cd sources
 %{__unzip} -o -qq enginesource20070123.zip
-sed -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
+%{__sed} -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
 
 %build
 %{__make} -C sources/darkplaces nexuiz \
