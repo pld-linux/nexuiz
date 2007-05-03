@@ -3,11 +3,16 @@ Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.2.3
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
 # Source0-md5:	953fda1555fc1f9ca040bdbb797eb0fd
+Source1:	nexuiz-glx.desktop
+Source2:	nexuiz-sdl.desktop
+Source3:	nexuiz.png
+# Source version of Nexuiz logo in inkspace svg format
+Source4:	nexuiz.svg
 URL:		http://nexuiz.com/
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
@@ -48,8 +53,12 @@ cd sources
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir}}
 install sources/darkplaces/nexuiz-* $RPM_BUILD_ROOT%{_bindir}
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,3 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%{_desktopdir}/nexuiz*.desktop
+%{_pixmapsdir}/nexuiz.png
