@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Nexuiz (SDL)
+Comment=Nexuiz for linux
+Comment[pl]=Nexuiz dla Linuksa
+Exec=nexuiz-sdl
+Icon=nexuiz.png
+Terminal=false
+Type=Application
+Categories=Game;X-FPPGame;
+Encoding=UTF-8
+# vi: encoding=utf-8

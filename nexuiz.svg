@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2211"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   width="45"
+   height="55"
+   version="1.0"
+   sodipodi:docbase="/tmp"
+   sodipodi:docname="nexuiz.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata2216">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2214">
+    <linearGradient
+       id="linearGradient5158">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5160" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop5162" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5140">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5142" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop5144" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5140"
+       id="radialGradient5148"
+       cx="-31.941624"
+       cy="26.104061"
+       fx="-31.941624"
+       fy="26.104061"
+       r="22.5"
+       gradientTransform="matrix(1,0,0,1.2222222,0,-5.8009024)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5158"
+       id="radialGradient5170"
+       cx="22.021761"
+       cy="27.081219"
+       fx="22.021761"
+       fy="27.081219"
+       r="22.589914"
+       gradientTransform="matrix(1.3569266,0,0,1.2393261,-6.7442232,-5.8879681)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="937"
+     inkscape:window-width="1274"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="14.327273"
+     inkscape:cx="31.94426"
+     inkscape:cy="27.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg2211" />
+  <path
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:url(#radialGradient5170);stroke-width:0.60321867px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 10.106371,20.93804 L 19.284787,18.664488 C 19.284787,18.664488 20.211049,17.759277 19.874226,15.885701 C 19.537403,14.012125 18.105908,11.422802 18.105908,11.422802 L 24.25292,14.454205 L 24.337126,17.65402 C 24.337126,17.65402 29.652631,16.236937 30.905166,16.390935 C 32.675253,16.608566 36.462739,18.159254 36.462739,18.159254 C 36.462739,18.159254 34.547061,28.83232 31.99984,35.253001 C 29.45262,41.673681 26.442267,43.926183 26.442267,43.926183 L 23.242452,38.537021 L 26.18965,39.631694 C 26.18965,39.631694 27.600095,37.694964 28.71582,33.232065 C 29.831545,28.769166 30.484138,21.190657 30.484138,21.190657 L 22.989835,23.043182 C 22.989835,23.043182 20.767808,36.665077 10.274782,40.052723 C 8.5863198,40.597838 11.790484,38.873844 15.579738,32.305804 C 19.360338,25.752764 18.358525,23.211593 18.358525,23.211593 L 15.032401,23.16949 L 10.106371,20.93804 z "
+     id="path2220"
+     sodipodi:nodetypes="ccscccscscccsccssccc"
+     inkscape:export-filename="/tmp/nexuiz.png"
+     inkscape:export-xdpi="166.05"
+     inkscape:export-ydpi="166.05" />
+  <rect
+     style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:4.08500004;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect5176"
+     width="34.689087"
+     height="34.689087"
+     x="5.7931471"
+     y="10.329949"
+     inkscape:export-filename="/tmp/nexuiz.png"
+     inkscape:export-xdpi="166.05"
+     inkscape:export-ydpi="166.05" />
+</svg>
