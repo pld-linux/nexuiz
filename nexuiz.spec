@@ -3,7 +3,7 @@ Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.2.3
-Release:	2
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
