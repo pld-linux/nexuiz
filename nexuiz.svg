@@ -12,8 +12,8 @@
    id="svg2211"
    sodipodi:version="0.32"
    inkscape:version="0.45.1"
-   width="45"
-   height="55"
+   width="128"
+   height="128"
    version="1.0"
    sodipodi:docbase="/tmp"
    sodipodi:docname="nexuiz.svg"
@@ -74,7 +74,7 @@
        fx="22.021761"
        fy="27.081219"
        r="22.589914"
-       gradientTransform="matrix(1.3569266,0,0,1.2393261,-6.7442232,-5.8879681)"
+       gradientTransform="matrix(5.1275152,0,0,4.6831298,-48.916914,-62.824856)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -89,27 +89,19 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="14.327273"
-     inkscape:cx="31.94426"
-     inkscape:cy="27.5"
+     inkscape:zoom="5.065456"
+     inkscape:cx="65.710536"
+     inkscape:cy="62.402359"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:current-layer="svg2211" />
+     inkscape:current-layer="svg2211"
+     width="128px"
+     height="128px" />
   <path
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:url(#radialGradient5170);stroke-width:0.60321867px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 10.106371,20.93804 L 19.284787,18.664488 C 19.284787,18.664488 20.211049,17.759277 19.874226,15.885701 C 19.537403,14.012125 18.105908,11.422802 18.105908,11.422802 L 24.25292,14.454205 L 24.337126,17.65402 C 24.337126,17.65402 29.652631,16.236937 30.905166,16.390935 C 32.675253,16.608566 36.462739,18.159254 36.462739,18.159254 C 36.462739,18.159254 34.547061,28.83232 31.99984,35.253001 C 29.45262,41.673681 26.442267,43.926183 26.442267,43.926183 L 23.242452,38.537021 L 26.18965,39.631694 C 26.18965,39.631694 27.600095,37.694964 28.71582,33.232065 C 29.831545,28.769166 30.484138,21.190657 30.484138,21.190657 L 22.989835,23.043182 C 22.989835,23.043182 20.767808,36.665077 10.274782,40.052723 C 8.5863198,40.597838 11.790484,38.873844 15.579738,32.305804 C 19.360338,25.752764 18.358525,23.211593 18.358525,23.211593 L 15.032401,23.16949 L 10.106371,20.93804 z "
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:url(#radialGradient5170);stroke-width:2.27942538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 14.757624,38.544491 L 49.440759,29.953257 C 49.440759,29.953257 52.940891,26.532671 51.668114,19.452856 C 50.395337,12.373041 44.986045,2.5885822 44.986045,2.5885822 L 68.214197,14.04356 L 68.532392,26.134929 C 68.532392,26.134929 88.618469,20.780097 93.351512,21.36202 C 100.04026,22.184398 114.35231,28.044093 114.35231,28.044093 C 114.35231,28.044093 107.1134,68.375169 97.488035,92.637453 C 87.862673,116.89973 76.487238,125.41142 76.487238,125.41142 L 64.395869,105.04701 L 75.532656,109.18353 C 75.532656,109.18353 80.862405,101.86507 85.078475,85.000799 C 89.294544,68.136524 91.760544,39.499073 91.760544,39.499073 L 63.441287,46.499341 C 63.441287,46.499341 55.044756,97.973366 15.394011,110.7745 C 9.0136993,112.83436 21.121503,106.31978 35.440227,81.50067 C 49.726249,56.738231 45.940627,47.135728 45.940627,47.135728 L 33.371966,46.97663 L 14.757624,38.544491 z "
      id="path2220"
      sodipodi:nodetypes="ccscccscscccsccssccc"
-     inkscape:export-filename="/tmp/nexuiz.png"
-     inkscape:export-xdpi="166.05"
-     inkscape:export-ydpi="166.05" />
-  <rect
-     style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:4.08500004;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect5176"
-     width="34.689087"
-     height="34.689087"
-     x="5.7931471"
-     y="10.329949"
      inkscape:export-filename="/tmp/nexuiz.png"
      inkscape:export-xdpi="166.05"
      inkscape:export-ydpi="166.05" />
