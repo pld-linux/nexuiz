@@ -69,4 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/nexuiz*.desktop
 %{_pixmapsdir}/%{name}.png
-%{_pixmpasdir}/%{name}.svg
+%{_pixmapsdir}/%{name}.svg
