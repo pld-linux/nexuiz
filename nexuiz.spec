@@ -1,13 +1,14 @@
-%define	_ver	%(echo %{version} | tr -d .)
+%define _ver	%(echo %{version} | tr -d .)
+%define _ever	20070531
 Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
-Version:	2.2.3
+Version:	2.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
-# Source0-md5:	953fda1555fc1f9ca040bdbb797eb0fd
+# Source0-md5:	b60c1f5198135463d00261646ae26911
 Source1:	nexuiz-glx.desktop
 Source2:	nexuiz-sdl.desktop
 Source3:	nexuiz.png
@@ -41,7 +42,7 @@ całkowicie przepisany kod obsługi sieci, dzięki któremu mogą walczyć
 %prep
 %setup -q -n Nexuiz
 cd sources
-%{__unzip} -o -qq enginesource20070123.zip
+%{__unzip} -o -qq enginesource%{_ever}.zip
 %{__sed} -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
 
 %build
@@ -66,7 +67,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/nexuiz-glx
+%attr(755,root,root) %{_bindir}/nexuiz-sdl
+%attr(755,root,root) %{_bindir}/nexuiz-dedicated
 %{_desktopdir}/nexuiz*.desktop
 %{_pixmapsdir}/%{name}.png
 %{_pixmapsdir}/%{name}.svg
