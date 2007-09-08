@@ -15,10 +15,13 @@ Source3:	nexuiz.png
 # Source version of Nexuiz logo in inkspace svg format
 Source4:	nexuiz.svg
 URL:		http://nexuiz.com/
+BuildRequires:	OpenGL-GLX-devel
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
+BuildRequires:	xorg-lib-libXxf86dga-devel
+BuildRequires:	xorg-lib-libXxf86vm-devel
 Requires:	nexuiz-data = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
