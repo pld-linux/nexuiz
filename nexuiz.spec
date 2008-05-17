@@ -1,14 +1,14 @@
 %define _ver	%(echo %{version} | tr -d .)
-%define _ever	20080229
+%define _ever	20080511
 Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
-Version:	2.4
+Version:	2.4.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
-# Source0-md5:	7ecf1e683c3db02cdbc8d4514e8e33ce
+# Source0-md5:	2ea51368774ca603fd56faebfeac74d7
 Source1:	%{name}-glx.desktop
 Source2:	%{name}-sdl.desktop
 Source3:	%{name}.png
@@ -65,6 +65,9 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}
+
+# remove junk
+rm -f $RPM_BUILD_ROOT%{_bindir}/nexuiz-base-revision.txt $RPM_BUILD_ROOT%{_bindir}/nexuiz-engine-changes.diff
 
 %clean
 rm -rf $RPM_BUILD_ROOT
