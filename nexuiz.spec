@@ -4,7 +4,7 @@ Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
@@ -50,7 +50,7 @@ cd sources
 %{__sed} -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
 
 %build
-%{__make} -C sources/darkplaces nexuiz \
+%{__make} -j1 -C sources/darkplaces nexuiz \
 	CC="%{__cc}" \
 	OPTIM_RELEASE="%{rpmcflags}" \
 	LDFLAGS_RELEASE="%{rpmcflags} %{rpmldflags}" \
