@@ -1,3 +1,6 @@
+#
+# TODO: nexuiz is looking for 62 version of libjpeg library, but there's only 70 version in poldek
+#
 %define _ver	%(echo %{version} | tr -d .)
 %define _ever	20091001
 Summary:	nexuiz - engine for first-person shoter game
