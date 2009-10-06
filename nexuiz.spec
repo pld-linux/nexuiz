@@ -1,14 +1,14 @@
 %define _ver	%(echo %{version} | tr -d .)
-%define _ever	20090501
+%define _ever	20091001
 Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
-Version:	2.5.1
+Version:	2.5.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
-# Source0-md5:	8e945f71a922f1f87ab406bafadde93f
+# Source0-md5:	d750bc328e58df8492f8d88bdcf818cb
 Source1:	%{name}-glx.desktop
 Source2:	%{name}-sdl.desktop
 Source3:	%{name}.png
