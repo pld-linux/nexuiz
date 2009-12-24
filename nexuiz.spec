@@ -1,13 +1,11 @@
 #
-# TODO: nexuiz is looking for 62 version of libjpeg library, but there's only 70 version in poldek
-#
 %define _ver	%(echo %{version} | tr -d .)
 %define _ever	20091001
 Summary:	nexuiz - engine for first-person shoter game
 Summary(pl.UTF-8):	nexuiz - silnik do strzelaniny w pierwszej osobie
 Name:		nexuiz
 Version:	2.5.2
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
@@ -57,7 +55,8 @@ cd sources
 	CC="%{__cc}" \
 	OPTIM_RELEASE="%{rpmcflags}" \
 	LDFLAGS_RELEASE="%{rpmcflags} %{rpmldflags}" \
-	DP_FS_BASEDIR="%{_datadir}/games/%{name}"
+	DP_FS_BASEDIR="%{_datadir}/games/%{name}" \
+	DP_LINK_TO_LIBJPEG=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
