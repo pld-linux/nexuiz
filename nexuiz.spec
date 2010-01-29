@@ -20,6 +20,7 @@ URL:		http://alientrap.org/nexuiz/
 BuildRequires:	OpenGL-GLX-devel
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
+BuildRequires:	libjpeg-devel
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
 BuildRequires:	xorg-lib-libXpm-devel
