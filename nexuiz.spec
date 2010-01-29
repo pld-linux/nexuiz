@@ -8,8 +8,9 @@ Version:	2.5.2
 Release:	3
 License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
-# Source0-md5:	d750bc328e58df8492f8d88bdcf818cb
+# extracted from: http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
+Source0:	ftp://distfiles.pld-linux.org/distfiles/by-md5/a/a/aa4e586e58e1c35a5e3ed76cc9348fbd/enginesource%{_ever}.zip
+# Source0-md5:	aa4e586e58e1c35a5e3ed76cc9348fbd
 Source1:	%{name}-glx.desktop
 Source2:	%{name}-sdl.desktop
 Source3:	%{name}.png
@@ -45,13 +46,11 @@ całkowicie przepisany kod obsługi sieci, dzięki któremu mogą walczyć
 64 osoby na pojedynczym serwerze.
 
 %prep
-%setup -q -n Nexuiz
-cd sources
-%{__unzip} -o -qq enginesource%{_ever}.zip
-%{__sed} -i 's/-Wdeclaration-after-statement//; /strip /d' darkplaces/makefile.inc
+%setup -q -n darkplaces
+%{__sed} -i 's/-Wdeclaration-after-statement//; /strip /d' makefile.inc
 
 %build
-%{__make} -j1 -C sources/darkplaces nexuiz \
+%{__make} -j1 nexuiz \
 	CC="%{__cc}" \
 	OPTIM_RELEASE="%{rpmcflags}" \
 	LDFLAGS_RELEASE="%{rpmcflags} %{rpmldflags}" \
@@ -61,7 +60,7 @@ cd sources
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir}}
-install sources/darkplaces/nexuiz-* $RPM_BUILD_ROOT%{_bindir}
+install nexuiz-* $RPM_BUILD_ROOT%{_bindir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
