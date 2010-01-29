@@ -9,7 +9,7 @@ Release:	3
 License:	GPL v2+
 Group:		X11/Applications/Games
 # extracted from: http://dl.sourceforge.net/nexuiz/%{name}-%{_ver}.zip
-Source0:	ftp://distfiles.pld-linux.org/distfiles/by-md5/a/a/aa4e586e58e1c35a5e3ed76cc9348fbd/enginesource%{_ever}.zip
+Source0:	enginesource%{_ever}.zip
 # Source0-md5:	aa4e586e58e1c35a5e3ed76cc9348fbd
 Source1:	%{name}-glx.desktop
 Source2:	%{name}-sdl.desktop
